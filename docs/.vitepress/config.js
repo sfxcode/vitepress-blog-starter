@@ -11,8 +11,12 @@ export default defineConfig({
       copyright: 'Copyright © 2022 SFXCode',
     },
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/vuejs/vitepress' },
+      { icon: 'github', link: 'https://github.com/sfxcode/vitepress-blog-starter' },
     ],
+    editLink: {
+      pattern: 'https://github.com/sfxcode/vitepress-blog-starter/edit/main/docs/:path',
+      text: 'Edit this page on GitHub',
+    },
     nav: nav(),
     sidebar: {
       '/guide/': sidebarGuide(),
@@ -64,8 +68,8 @@ function nav() {
       text: version,
       items: [
         {
-          text: 'Vitepress',
-          link: 'https://github.com/vuejs/vitepress',
+          text: 'vitepress-blog-starter',
+          link: 'https://github.com/sfxcode/vitepress-blog-starter',
         },
       ],
     },
