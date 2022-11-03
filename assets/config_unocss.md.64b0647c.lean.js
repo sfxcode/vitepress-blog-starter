@@ -1,1 +1,0 @@
-import{_ as e,o as r,c as t,e as a}from"./app.c8f5a95a.js";const b=JSON.parse('{"title":"UnoCSS Configurations","description":"","frontmatter":{},"headers":[],"relativePath":"config/unocss.md"}'),s={name:"config/unocss.md"},n=a("",9),o=[n];function i(l,h,c,u,p,f){return r(),t("div",null,o)}const m=e(s,[["render",i]]);export{b as __pageData,m as default};
