@@ -1,1 +1,0 @@
-import{_ as s,o as n,c as a,e as p}from"./app.1ce316fe.js";const A=JSON.parse('{"title":"Anu Installation","description":"","frontmatter":{},"headers":[],"relativePath":"config/anu.md"}'),l={name:"config/anu.md"},o=p("",18),e=[o];function t(c,r,D,y,F,i){return n(),a("div",null,e)}const d=s(l,[["render",t]]);export{A as __pageData,d as default};
