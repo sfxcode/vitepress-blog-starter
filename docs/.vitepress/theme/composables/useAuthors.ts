@@ -1,8 +1,8 @@
 import type { Ref } from 'vue'
 import { computed, ref } from 'vue'
 import { useRoute } from 'vitepress'
-import type { Author } from './Authors.data'
-import { data } from './Authors.data'
+import type { Author } from './authors.data'
+import { data } from './authors.data'
 
 export default () => {
   const allAuthors: Ref<Author[]> = ref(data)
