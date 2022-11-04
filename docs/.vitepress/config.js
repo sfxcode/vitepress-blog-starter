@@ -68,8 +68,8 @@ function nav() {
       text: version,
       items: [
         {
-          text: 'vitepress-blog-starter',
-          link: 'https://github.com/sfxcode/vitepress-blog-starter',
+          text: 'Changelog',
+          link: 'https://github.com/sfxcode/vitepress-blog-starter/blob/main/CHANGELOG.md',
         },
       ],
     },
