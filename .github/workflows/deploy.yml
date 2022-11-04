@@ -33,11 +33,3 @@ jobs:
           publish_dir: docs/.vitepress/dist
           # cname: example.com # if wanna deploy to custom domain
 
-      - run: pnpm changelog
-
-      - name: Commit
-        uses: stefanzweifel/git-auto-commit-action@v4
-        with:
-          # Optional. Commit message for the created commit.
-          # Defaults to "Apply automatic changes"
-          commit_message: 'build(changelog): update'
