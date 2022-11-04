@@ -4,7 +4,8 @@ import { version } from '../../package.json'
 
 export default defineConfig({
   title: 'VitePress Blog Starter',
-  description: 'Coding for eternity ...',
+  description: 'Blog included. Built on top of UnoCSS and Anu.',
+  base: '/viyrpress-blog-starter/',
   themeConfig: {
     footer: {
       message: 'VitePress Blog Starter',
