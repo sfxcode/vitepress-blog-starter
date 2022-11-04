@@ -79,11 +79,11 @@ Result:
 
 Result:
 
-![m'lady](http://i.imgur.com/v8IVDka.jpg)
+![m'lady](https://i.imgur.com/v8IVDka.jpg)
 
 ### Links
 
-    [link](http://example.com)
+    [link](https://github.com/sfxcode/vitepress-blog-starter)
 
 Result:
 
@@ -232,7 +232,7 @@ Typing an `@` symbol, followed by a username, will notify that person to come an
 
 ### Emoji
 
-GitHub supports emoji! Check out the [Emoji Cheat Sheet](http://www.emoji-cheat-sheet.com/).
+GitHub supports emoji! Check out the [Emoji Cheat Sheet](https://github.com/sfxcode/vitepress-blog-starter).
 
 ## References
 
