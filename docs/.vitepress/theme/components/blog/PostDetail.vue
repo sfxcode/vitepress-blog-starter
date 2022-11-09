@@ -1,12 +1,17 @@
 <script setup lang="ts">
 import usePosts from '../../composables/usePosts'
+import useAuthors from '../../composables/useAuthors'
 const { currentPost: post, path, prevPost, nextPost } = usePosts()
+const { findByName } = useAuthors()
+const author = findByName(post.value.author)
 </script>
 
 <template>
   <div>
     <div>
       <div class="flex justify-between items-center mb-1 text-gray-500">
+        <PostAuthor :author="author" />
+
         <span
           class="bg-primary-100  text-sm font-medium inline-flex items-center rounded"
         >
