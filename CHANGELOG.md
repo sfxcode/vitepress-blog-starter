@@ -1,10 +1,16 @@
-### [0.6.6](https://github.com/sfxcode/vitepress-blog-starter/compare/v0.6.5...v0.6.6) (2022-11-04)
+### [0.6.7](https://github.com/sfxcode/vitepress-blog-starter/compare/v0.6.5...v0.6.7) (2022-11-09)
+
+
+### Features
+
+* **PostDetail:** Add Author ([1b602fd](https://github.com/sfxcode/vitepress-blog-starter/commit/1b602fde6ae2ed8c39c1e3e88354cef8159d14cd))
 
 
 ### Maintenance
 
 * **changelog:** Set Config ([6fc2ead](https://github.com/sfxcode/vitepress-blog-starter/commit/6fc2ead6a62d603e918214149b19b043aa29f86d))
 * **changelog:** Set Config ([1b7b6ee](https://github.com/sfxcode/vitepress-blog-starter/commit/1b7b6eebab679d12119a1950299a5aeba4165366))
+* **Dependencies:** Update Vitepress ([736154a](https://github.com/sfxcode/vitepress-blog-starter/commit/736154ad615dd0076426935b0f1faba96c5daeb3))
 
 ### [0.6.5](https://github.com/sfxcode/vitepress-blog-starter/compare/v0.6.3...v0.6.5) (2022-11-04)
 
