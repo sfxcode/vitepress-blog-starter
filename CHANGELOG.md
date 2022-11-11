@@ -1,3 +1,10 @@
+### [0.6.8](https://github.com/sfxcode/vitepress-blog-starter/compare/v0.6.7...v0.6.8) (2022-11-11)
+
+
+### Features
+
+* **search:** Add Local Search ([898be43](https://github.com/sfxcode/vitepress-blog-starter/commit/898be437ed952ac4069edcd6ba929b3424a0f267))
+
 ### [0.6.7](https://github.com/sfxcode/vitepress-blog-starter/compare/v0.6.5...v0.6.7) (2022-11-09)
 
 
