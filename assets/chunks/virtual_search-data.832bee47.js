@@ -1,0 +1,1 @@
+const e={version:"2.3.9",fields:["b","a"],fieldVectors:[],invertedIndex:[],pipeline:["stemmer"]},t={},s={wildcard:!1,previewLength:62},n={INDEX_DATA:e,PREVIEW_LOOKUP:t,Options:s};export{n as default};
