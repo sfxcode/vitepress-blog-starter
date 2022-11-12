@@ -1,5 +1,6 @@
 import Unocss from 'unocss/vite'
 import { defineConfig } from 'vitepress'
+import { SearchPlugin } from 'vitepress-plugin-search'
 import { version } from '../../package.json'
 
 export default defineConfig({
@@ -38,6 +39,7 @@ export default defineConfig({
       Unocss({
         configFile: '../../unocss.config.ts',
       }),
+      SearchPlugin(),
     ],
   },
 })
