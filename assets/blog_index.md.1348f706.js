@@ -1,0 +1,1 @@
+import{_ as t,o,c as a,a as n,r as s}from"./app.ddc2d01d.js";const u=JSON.parse('{"title":"","description":"","frontmatter":{"layout":"home"},"headers":[],"relativePath":"blog/index.md"}'),r={name:"blog/index.md"};function c(d,p,_,i,l,m){const e=s("Posts");return o(),a("div",null,[n(e)])}const x=t(r,[["render",c]]);export{u as __pageData,x as default};
