@@ -1,3 +1,25 @@
+## [0.7.0](https://github.com/sfxcode/vitepress-blog-starter/compare/v0.6.8...v0.7.0) (2022-12-02)
+
+
+### Code Refactoring
+
+* **config:** Add base Path ([2bec57d](https://github.com/sfxcode/vitepress-blog-starter/commit/2bec57db02ffd3b0598072b7d902a2afd1652fb9))
+* **config:** remove base Path ([1f7ea41](https://github.com/sfxcode/vitepress-blog-starter/commit/1f7ea41fe136809af21c6c134537a5bb7757fb94))
+* **config:** remove base Path ([f2ffa2b](https://github.com/sfxcode/vitepress-blog-starter/commit/f2ffa2bb756bd4f0ac07c7a74a9936757face28e))
+* **configuration:** Move into docs folder ([3a38b90](https://github.com/sfxcode/vitepress-blog-starter/commit/3a38b9035b43a56f97759e1405aeb6081fde5b03))
+
+
+### Features
+
+* **search:** Add Local Search ([6f115a8](https://github.com/sfxcode/vitepress-blog-starter/commit/6f115a86a31636ae2ea975ce0e40318351a70bcd))
+* **search:** Add Local Search ([d1dafdd](https://github.com/sfxcode/vitepress-blog-starter/commit/d1dafddf8668f4bd720f8428b8f82d60fa5dcd39))
+
+
+### Maintenance
+
+* **Dependencies:** Update Anu 0.11.0 ([0a0501e](https://github.com/sfxcode/vitepress-blog-starter/commit/0a0501e0501d54e46b668b582d7de65476e324d6))
+* **Dependencies:** Update Vitepress ([014f4a4](https://github.com/sfxcode/vitepress-blog-starter/commit/014f4a4b046a2647edf9e021f22e44d5f4eea3c1))
+
 ### [0.6.8](https://github.com/sfxcode/vitepress-blog-starter/compare/v0.6.7...v0.6.8) (2022-11-11)
 
 
