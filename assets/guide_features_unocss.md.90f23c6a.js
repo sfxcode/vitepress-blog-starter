@@ -1,0 +1,1 @@
+import{_ as t,o as s,c as a,a as o,r}from"./app.4ff3036f.js";const l=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"guide/features/unocss.md"}'),n={name:"guide/features/unocss.md"};function c(u,p,_,d,i,m){const e=r("Feature");return s(),a("div",null,[o(e)])}const $=t(n,[["render",c]]);export{l as __pageData,$ as default};
