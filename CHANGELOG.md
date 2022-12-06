@@ -1,4 +1,4 @@
-## [0.7.0](https://github.com/sfxcode/vitepress-blog-starter/compare/v0.6.8...v0.7.0) (2022-12-02)
+### [0.7.1](https://github.com/sfxcode/vitepress-blog-starter/compare/v0.6.8...v0.7.1) (2022-12-06)
 
 
 ### Code Refactoring
@@ -17,8 +17,10 @@
 
 ### Maintenance
 
+* **Dependencies:** Update Anu 0.11.0 ([0077650](https://github.com/sfxcode/vitepress-blog-starter/commit/0077650e511a5ddbfe5950fe19747ca778759ad0))
 * **Dependencies:** Update Anu 0.11.0 ([0a0501e](https://github.com/sfxcode/vitepress-blog-starter/commit/0a0501e0501d54e46b668b582d7de65476e324d6))
 * **Dependencies:** Update Vitepress ([014f4a4](https://github.com/sfxcode/vitepress-blog-starter/commit/014f4a4b046a2647edf9e021f22e44d5f4eea3c1))
+* **Dependencies:** Update VitePress ([41ae9b4](https://github.com/sfxcode/vitepress-blog-starter/commit/41ae9b444e601d0257721085a8dbd78b9a68a153))
 
 ### [0.6.8](https://github.com/sfxcode/vitepress-blog-starter/compare/v0.6.7...v0.6.8) (2022-11-11)
 
