@@ -1,3 +1,10 @@
+### [0.7.2](https://github.com/sfxcode/vitepress-blog-starter/compare/v0.7.1...v0.7.2) (2022-12-06)
+
+
+### Maintenance
+
+* **Dependencies:** Update VitePress ([8051df0](https://github.com/sfxcode/vitepress-blog-starter/commit/8051df02d7ec48d4d878f0d9036a9ac33f728c4b))
+
 ### [0.7.1](https://github.com/sfxcode/vitepress-blog-starter/compare/v0.6.8...v0.7.1) (2022-12-06)
 
 
