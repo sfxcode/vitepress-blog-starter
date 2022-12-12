@@ -1,5 +1,4 @@
 <script setup lang='ts'>
-import { defineProps } from 'vue'
 import type { Post } from '../../composables/posts.data'
 import useAuthors from '../../composables/useAuthors'
 import PostIcon from './PostIcon.vue'
