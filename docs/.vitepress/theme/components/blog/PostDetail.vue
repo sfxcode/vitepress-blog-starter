@@ -1,6 +1,10 @@
 <script setup lang="ts">
+import { useData } from 'vitepress'
 import usePosts from '../../composables/usePosts'
 import useAuthors from '../../composables/useAuthors'
+
+const { site } = useData()
+
 const { currentPost: post, path, prevPost, nextPost } = usePosts()
 const { findByName } = useAuthors()
 const author = findByName(post.value.author)
@@ -23,7 +27,7 @@ const author = findByName(post.value.author)
       </h3>
       <div class="flex justify-between items-center mt-2 text-gray-500">
         <a
-          v-if="prevPost" :href="`/blog${prevPost.href}`"
+          v-if="prevPost" :href="`${site.base}blog${prevPost.href}`"
           class="inline-flex items-center font-medium dark:text-white hover:text-[color:var(--vp-c-brand-dark)]"
         >
           <div class="i-bx:arrow-back mr-2" />
@@ -31,7 +35,7 @@ const author = findByName(post.value.author)
         </a>
         <div v-if="!prevPost" />
         <a
-          v-if="nextPost" :href="`/blog${nextPost.href}`"
+          v-if="nextPost" :href="`${site.base}blog${nextPost.href}`"
           class="inline-flex items-center font-medium dark:text-white hover:text-[color:var(--vp-c-brand-dark)]"
         >
           <span>Next Post</span>

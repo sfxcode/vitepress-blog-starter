@@ -1,4 +1,5 @@
 <script setup lang='ts'>
+import { useData } from 'vitepress'
 import type { Post } from '../../composables/posts.data'
 import useAuthors from '../../composables/useAuthors'
 import PostIcon from './PostIcon.vue'
@@ -7,7 +8,7 @@ import PostAuthor from './PostAuthor.vue'
 const props = defineProps<{
   post: Post
 }>()
-
+const { site } = useData()
 const { findByName } = useAuthors()
 const author = findByName(props.post.author)
 </script>
@@ -26,7 +27,7 @@ const author = findByName(props.post.author)
     </div>
     <h2 class="mb-2 text-2xl font-bold tracking-tight text-[color:var(--vp-c-brand-light)] dark:text-[color:var(--vp-c-brand-dark)]">
       <a
-        :href="`/blog${post.href}`"
+        :href="`${site.base}blog${post.href}`"
       >{{ post.title }}</a>
     </h2>
     <p class="mb-5 font-light" v-html="post.excerpt" />

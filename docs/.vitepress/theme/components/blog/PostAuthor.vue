@@ -1,9 +1,12 @@
 <script setup lang="ts">
+import { useData } from 'vitepress'
 import type { Author } from '../../composables/authors.data'
 
 const props = defineProps<{
   author: Author
 }>()
+
+const { site } = useData()
 </script>
 
 <template>
@@ -14,7 +17,7 @@ const props = defineProps<{
       :alt="author.name"
     >
     <a
-      :href="`/blog${author.href}`"
+      :href="`${site.base}blog${author.href}`"
       class="inline-flex items-center font-medium hover:text-[color:var(--vp-c-brand-dark)]"
     ><span class="font-medium dark:text-white">
       {{ author.name }}
