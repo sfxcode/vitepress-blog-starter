@@ -1,3 +1,16 @@
+### [0.7.3](https://github.com/sfxcode/vitepress-blog-starter/compare/v0.7.2...v0.7.3) (2023-01-02)
+
+
+### Code Refactoring
+
+* **path:** Use site path ([1ade4cb](https://github.com/sfxcode/vitepress-blog-starter/commit/1ade4cbf953758f0e70a11474f5c6989a87eb243))
+
+
+### Maintenance
+
+* **Dependencies:** Update VitePress ([29599a6](https://github.com/sfxcode/vitepress-blog-starter/commit/29599a6ce309434b5748205bf1e481ed76a154b7))
+* **Dependencies:** Update VitePress ([0044776](https://github.com/sfxcode/vitepress-blog-starter/commit/004477696b7de57d0514d8cc9bb2c6f96c99edf8))
+
 ### [0.7.2](https://github.com/sfxcode/vitepress-blog-starter/compare/v0.7.1...v0.7.2) (2022-12-06)
 
 
