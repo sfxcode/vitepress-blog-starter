@@ -1,3 +1,11 @@
+### [0.7.4](https://github.com/sfxcode/vitepress-blog-starter/compare/v0.7.3...v0.7.4) (2023-03-05)
+
+
+### Maintenance
+
+* **Dependencies:** Update Vitepress to lates alpha version ([66a9cd9](https://github.com/sfxcode/vitepress-blog-starter/commit/66a9cd975a0e38d02993a3d5bdeaf413a74fd7f5))
+* **version:** 0.7.3 ([05bb819](https://github.com/sfxcode/vitepress-blog-starter/commit/05bb819901662e95f0458dd4743c7d10bed5f548))
+
 ### [0.7.3](https://github.com/sfxcode/vitepress-blog-starter/compare/v0.7.2...v0.7.3) (2023-01-02)
 
 
