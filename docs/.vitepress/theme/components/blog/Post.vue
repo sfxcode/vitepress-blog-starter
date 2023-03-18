@@ -34,7 +34,7 @@ const author = findByName(props.post.author)
     <div class="flex justify-between items-center">
       <PostAuthor :author="author" />
       <a
-        :href="`/blog${post.href}`"
+        :href="`${site.base}blog${post.href}`"
         class="inline-flex items-center font-medium hover:text-[color:var(--vp-c-brand-dark)]"
       >
         Read more
