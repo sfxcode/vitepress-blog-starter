@@ -38,3 +38,6 @@ pnpm-debug.log*
 
 .gitconfig
 
+# vitepress
+docs/.vitepress/cache
+docs/.vitepress/dist
