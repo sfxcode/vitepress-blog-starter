@@ -1,11 +1,7 @@
 <script setup lang="ts">
-import type { Post } from '../../composables/posts.data'
-
 const props = defineProps<{
-  post: Post
+  category: string
 }>()
-
-const category: string = props.post.data.category ? props.post.data.category : 'Article'
 </script>
 
 <template>

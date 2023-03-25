@@ -3,8 +3,8 @@ import { createContentLoader } from 'vitepress'
 export interface Author {
   name: string
   href: string
+  avatar: string
   excerpt: string | undefined
-  data: Record<string, any>
 }
 
 declare const data: Author[]
@@ -16,9 +16,9 @@ export default createContentLoader('blog/authors/*.md', {
     return raw
       .map(({ url, frontmatter, excerpt }) => ({
         name: frontmatter.name,
+        avatar: frontmatter.avatar ?? '',
         href: url.replace('/blog/', '/'),
         excerpt,
-        data: frontmatter,
       }))
       .sort((a, b) => a.name.localeCompare(b.name))
   },

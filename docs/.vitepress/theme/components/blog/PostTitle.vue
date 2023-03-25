@@ -1,22 +1,21 @@
 <script setup lang="ts">
 import { useData } from 'vitepress'
 import usePosts from '../../composables/usePosts'
-import useAuthors from '../../composables/useAuthors'
+import PostAuthor from './PostAuthor.vue'
+import PostIcon from './PostIcon.vue'
 
-const { site } = useData()
+const { site, frontmatter } = useData()
 
 const { currentPost: post, path, prevPost, nextPost } = usePosts()
-const { findByName } = useAuthors()
-const author = findByName(post.value.author)
 </script>
 
 <template>
   <div class="mb-6">
     <div class="flex justify-between items-center mb-1 text-gray-500">
-      <PostAuthor :author="author" />
+      <PostAuthor :name="post.author" />
 
       <span class="bg-primary-100 text-sm font-medium inline-flex items-center rounded">
-        <PostIcon :post="post"
+        <PostIcon :category="post.category"
       /></span>
       <span class="text-sm">{{ post.date.since }}</span>
     </div>

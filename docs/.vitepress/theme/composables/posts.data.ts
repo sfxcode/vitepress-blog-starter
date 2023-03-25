@@ -4,13 +4,13 @@ export interface Post {
   title: string
   author: string
   href: string
+  category: string
   date: {
     time: number
     string: string
     since: string
   }
   excerpt: string | undefined
-  data: Record<string, any>
 }
 
 declare const data: Post[]
@@ -25,8 +25,8 @@ export default createContentLoader('blog/posts/*.md', {
         author: frontmatter.author ? frontmatter.author : 'Unknown',
         href: url.replace('/blog/', '/'),
         excerpt,
+        category: frontmatter.category ? frontmatter.category : 'Article',
         date: formatDate(frontmatter.date),
-        data: frontmatter,
       }))
       .sort((a, b) => b.date.time - a.date.time)
   },
