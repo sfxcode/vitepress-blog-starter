@@ -1,15 +1,5 @@
-import path = require('path')
-import fs = require('fs')
-import type { MarkdownRenderer } from 'vitepress'
-import { createMarkdownRenderer } from 'vitepress'
+import { createContentLoader } from 'vitepress'
 import { formatDistance } from 'date-fns'
-import useBlogFile from './useBlogFile'
-
-let md: MarkdownRenderer
-const { folderDir, readFrontMatter } = useBlogFile()
-
-const dir = folderDir('posts')
-
 export interface Post {
   title: string
   author: string
@@ -26,50 +16,25 @@ export interface Post {
 declare const data: Post[]
 export { data }
 
-async function load(): Promise<Post[]>
-async function load() {
-  md = md || (await createMarkdownRenderer(process.cwd()))
-  return fs
-    .readdirSync(dir)
-    .map(file => getPost(file, dir))
-    .sort((a, b) => b.date.time - a.date.time)
-}
+export default createContentLoader('blog/posts/*.md', {
+  excerpt: true,
+  transform(raw): Post[] {
+    return raw
+      .map(({ url, frontmatter, excerpt }) => ({
+        title: frontmatter.title,
+        author: frontmatter.author ? frontmatter.author : 'Unknown',
+        href: url.replace('/blog/', '/'),
+        excerpt,
+        date: formatDate(frontmatter.date),
+        data: frontmatter,
+      }))
+      .sort((a, b) => b.date.time - a.date.time)
+  },
+})
 
-export default {
-  watch: path.join(dir, '*.md'),
-  load,
-}
-
-const cache = new Map()
-
-function getPost(file: string, postDir: string): Post {
-  const fullPath = path.join(postDir, file)
-  const timestamp = fs.statSync(fullPath).mtimeMs
-
-  const { data, excerpt } = readFrontMatter(file, postDir, cache)
-
-  const post: Post = {
-    title: data.title,
-    author: data.author ? data.author : 'Unknown',
-    href: `/posts/${file.replace(/\.md$/, '.html')}`,
-    date: formatDate(data.date),
-    excerpt: excerpt && md.render(excerpt),
-    data,
-  }
-
-  cache.set(fullPath, {
-    timestamp,
-    post,
-  })
-  return post
-}
-
-function formatDate(date: string | Date): Post['date'] {
-  if (!(date instanceof Date))
-    date = new Date(date)
-
+function formatDate(raw: string): Post['date'] {
+  const date = new Date(raw)
   date.setUTCHours(12)
-
   return {
     time: +date,
     string: date.toLocaleDateString('en-US', {
