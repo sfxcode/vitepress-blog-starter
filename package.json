@@ -24,6 +24,7 @@
     "@iconify-json/heroicons-outline": "^1.1.6",
     "@iconify-json/logos": "^1.1.23",
     "@jcamp/tailwindcss-plugin-icons": "^0.4.0",
+    "@jcamp/vitepress-blog-theme": "file:jcamp-vitepress-blog-theme-0.0.1.tgz",
     "@tailwindcss/typography": "^0.5.4",
     "@types/node": "^18.15.3",
     "@vueuse/core": "^9.13.0",

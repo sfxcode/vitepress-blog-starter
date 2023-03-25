@@ -7,6 +7,7 @@ specifiers:
   '@iconify-json/heroicons-outline': ^1.1.6
   '@iconify-json/logos': ^1.1.23
   '@jcamp/tailwindcss-plugin-icons': ^0.4.0
+  '@jcamp/vitepress-blog-theme': file:jcamp-vitepress-blog-theme-0.0.1.tgz
   '@tailwindcss/typography': ^0.5.4
   '@types/node': ^18.15.3
   '@vueuse/core': ^9.13.0
@@ -33,6 +34,7 @@ devDependencies:
   '@iconify-json/heroicons-outline': 1.1.6
   '@iconify-json/logos': 1.1.23
   '@jcamp/tailwindcss-plugin-icons': 0.4.0_tailwindcss@3.2.7
+  '@jcamp/vitepress-blog-theme': file:jcamp-vitepress-blog-theme-0.0.1.tgz_@types+node@18.15.3
   '@tailwindcss/typography': 0.5.9_tailwindcss@3.2.7
   '@types/node': 18.15.3
   '@vueuse/core': 9.13.0_vue@3.2.47
@@ -4378,4 +4380,34 @@ packages:
   /yocto-queue/0.1.0:
     resolution: {integrity: sha512-rVksvsnNCdJ/ohGc6xgPwyN8eheCxsiLM8mxuE/t/mOVqJewPuO1miLpTHQiRgTKCLexL4MeAFVagts7HmNZ2Q==}
     engines: {node: '>=10'}
+    dev: true
+
+  file:jcamp-vitepress-blog-theme-0.0.1.tgz_@types+node@18.15.3:
+    resolution: {integrity: sha512-/LAZKH5pyW1CTPOgPByN/cHBvXbky2sKhO/ZnzUPOazaG3gmcd6cy+3V/q+EJpkdi2mCwDUpkbTTkAq1byO60A==, tarball: file:jcamp-vitepress-blog-theme-0.0.1.tgz}
+    id: file:jcamp-vitepress-blog-theme-0.0.1.tgz
+    name: '@jcamp/vitepress-blog-theme'
+    version: 0.0.1
+    hasBin: true
+    dependencies:
+      '@docsearch/css': 3.3.3
+      '@docsearch/js': 3.3.3
+      '@vitejs/plugin-vue': 4.1.0_vite@4.2.1+vue@3.2.47
+      '@vue/devtools-api': 6.5.0
+      '@vueuse/core': 9.13.0_vue@3.2.47
+      body-scroll-lock: 4.0.0-beta.0
+      shiki: 0.14.1
+      vite: 4.2.1_@types+node@18.15.3
+      vue: 3.2.47
+    transitivePeerDependencies:
+      - '@algolia/client-search'
+      - '@types/node'
+      - '@types/react'
+      - '@vue/composition-api'
+      - less
+      - react
+      - react-dom
+      - sass
+      - stylus
+      - sugarss
+      - terser
     dev: true

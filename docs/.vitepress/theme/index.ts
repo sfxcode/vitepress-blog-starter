@@ -1,4 +1,4 @@
-import DefaultTheme from 'vitepress/theme'
+import DefaultTheme from '@jcamp/vitepress-blog-theme/theme'
 import type { App } from 'vue'
 import './tailwind.postcss'
 import daisyui from 'daisyui-vue'

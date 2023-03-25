@@ -3,6 +3,7 @@ title: How to quickly deploy a static website
 author: Peter Parker
 date: 2022-09-11
 blog: post
+aside: left
 ---
 
 Static websites are now used to bootstrap lots of websites and are becoming the basis for a variety of tools that even influence both web designers and developers influence both web designers and developers.
