@@ -2,8 +2,8 @@ Guide Overview
 
 Vitepress sample with
 
-* UnoCSS
-* ANU
-* Blog (Posts, Authors)
+- TailwindCSS
+- Daisy UI Vue
+- Blog (Posts, Authors)
 
 configured.

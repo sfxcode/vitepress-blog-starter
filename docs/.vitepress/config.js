@@ -1,11 +1,10 @@
-import Unocss from 'unocss/vite'
 import { defineConfig } from 'vitepress'
 import { SearchPlugin } from 'vitepress-plugin-search'
 import { version } from '../../package.json'
 
 export default defineConfig({
   title: 'VitePress Blog Starter',
-  description: 'Blog included. Built on top of UnoCSS and Anu.',
+  description: 'Blog included. Built on top of TailwindCSS and Daisy UI.',
   base: '/vitepress-blog-starter/',
   themeConfig: {
     footer: {
@@ -13,10 +12,10 @@ export default defineConfig({
       copyright: 'Copyright © 2022 SFXCode',
     },
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/sfxcode/vitepress-blog-starter' },
+      { icon: 'github', link: 'https://github.com/jcamp-code/vitepress-tailwind-blog-starter' },
     ],
     editLink: {
-      pattern: 'https://github.com/sfxcode/vitepress-blog-starter/edit/main/docs/:path',
+      pattern: 'https://github.com/jcamp-code/vitepress-tailwind-blog-starter/edit/main/docs/:path',
       text: 'Edit this page on GitHub',
     },
     nav: nav(),
@@ -28,7 +27,6 @@ export default defineConfig({
       title: 'My Blog',
       description: 'Some articles for sample Blog',
     },
-
   },
   markdown: {
     headers: {
@@ -36,12 +34,7 @@ export default defineConfig({
     },
   },
   vite: {
-    plugins: [
-      Unocss({
-        configFile: '../../unocss.config.ts',
-      }),
-      SearchPlugin(),
-    ],
+    plugins: [SearchPlugin()],
     build: {
       ssr: false,
     },
@@ -61,12 +54,16 @@ function nav() {
           link: 'https://vitepress.vuejs.org',
         },
         {
-          text: 'UnoCSS',
-          link: 'https://uno.antfu.me',
+          text: 'Tailwind CSS',
+          link: 'https://tailwindcss.com',
         },
         {
-          text: 'Anu',
-          link: 'https://anu-vue.netlify.app',
+          text: 'DaisyUI-Vue',
+          link: 'https://daief.tech/daisyui-vue/',
+        },
+        {
+          text: 'Tailwind CSS Icons Plugin',
+          link: 'https://github.com/jcamp-code/tailwindcss-plugin-icons',
         },
       ],
     },
@@ -87,16 +84,14 @@ function sidebarGuide() {
     {
       text: 'Introduction',
       collapsible: true,
-      items: [
-        { text: 'What is this?', link: '/guide/' },
-      ],
+      items: [{ text: 'What is this?', link: '/guide/' }],
     },
     {
       text: 'Features',
       collapsible: true,
       items: [
-        { text: 'UnoCSS', link: '/guide/features/unocss' },
-        { text: 'Anu', link: '/guide/features/anu' },
+        { text: 'TailwindCSS', link: '/guide/features/tailwindcss' },
+        { text: 'DaisyUI-Vue', link: '/guide/features/daisyui' },
       ],
     },
   ]
@@ -108,8 +103,8 @@ function sidebarConfig() {
       text: 'Config',
       items: [
         { text: 'Introduction', link: '/config/' },
-        { text: 'UnoCSS', link: '/config/unocss' },
-        { text: 'Anu', link: '/config/anu' },
+        { text: 'TailwindCSS', link: '/config/tailwindcss' },
+        { text: 'DaisyUI-Vue', link: '/config/daisyui' },
       ],
     },
   ]

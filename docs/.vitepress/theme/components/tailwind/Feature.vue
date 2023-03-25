@@ -2,16 +2,31 @@
   <section>
     <div class="container px-6 py-10 mx-auto">
       <div class="lg:flex lg:items-center">
-        <div class="w-full space-y-12 lg:w-1/2 ">
+        <div class="w-full space-y-12 lg:w-1/2">
           <div>
             <h1 class="text-3xl font-semibold text-gray-800 capitalize lg:text-4xl dark:text-white">
-              UnoCSS
-              <br>Components
+              Tailwind CSS
+              <br />Components
             </h1>
+            <dv-card
+              class="bg-base-100"
+              bordered
+              image="https://placeimg.com/400/225/arch"
+              title="Top image"
+              description="Rerum reiciendis beatae tenetur excepturi aut pariatur est eos. Sit sit necessitatibus veritatis sed molestiae voluptates incidunt iure sapiente."
+            >
+              <template #actions>
+                <dv-button type="secondary"> More info </dv-button>
+              </template>
+            </dv-card>
             <div class="mt-2">
               <span class="inline-block w-40 h-1 rounded-full bg-[color:var(--vp-c-brand-dark)]" />
-              <span class="inline-block w-3 h-1 ml-1 rounded-full bg-[color:var(--vp-c-brand-dark)]" />
-              <span class="inline-block w-1 h-1 ml-1 rounded-full bg-[color:var(--vp-c-brand-dark)]" />
+              <span
+                class="inline-block w-3 h-1 ml-1 rounded-full bg-[color:var(--vp-c-brand-dark)]"
+              />
+              <span
+                class="inline-block w-1 h-1 ml-1 rounded-full bg-[color:var(--vp-c-brand-dark)]"
+              />
             </div>
           </div>
 
@@ -20,11 +35,16 @@
               class="inline-block p-2 text-white bg-[color:var(--vp-c-brand-dark)] rounded-xl md:mx-4 dark:text-white dark:bg-[color:var(--vp-c-brand-dark)]"
             >
               <svg
-                xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+                class="w-6 h-6"
+                fill="none"
+                viewBox="0 0 24 24"
                 stroke="currentColor"
               >
                 <path
-                  stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
                   d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"
                 />
               </svg>
@@ -36,8 +56,8 @@
               </h1>
 
               <p class="mt-3 text-gray-500 dark:text-gray-300">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident ab nulla quod dignissimos vel non
-                corrupti doloribus voluptatum eveniet
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident ab nulla quod
+                dignissimos vel non corrupti doloribus voluptatum eveniet
               </p>
             </div>
           </div>
@@ -47,11 +67,16 @@
               class="inline-block p-2 text-white bg-[color:var(--vp-c-brand-dark)] rounded-xl md:mx-4 dark:text-white dark:bg-[color:var(--vp-c-brand-dark)]"
             >
               <svg
-                xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+                class="w-6 h-6"
+                fill="none"
+                viewBox="0 0 24 24"
                 stroke="currentColor"
               >
                 <path
-                  stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
                   d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4"
                 />
               </svg>
@@ -63,8 +88,8 @@
               </h1>
 
               <p class="mt-3 text-gray-500 dark:text-gray-300">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident ab nulla quod dignissimos vel non
-                corrupti doloribus voluptatum eveniet
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident ab nulla quod
+                dignissimos vel non corrupti doloribus voluptatum eveniet
               </p>
             </div>
           </div>
@@ -74,15 +99,22 @@
               class="inline-block p-2 text-white bg-[color:var(--vp-c-brand-dark)] rounded-xl md:mx-4 dark:text-white dark:bg-[color:var(--vp-c-brand-dark)]"
             >
               <svg
-                xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+                class="w-6 h-6"
+                fill="none"
+                viewBox="0 0 24 24"
                 stroke="currentColor"
               >
                 <path
-                  stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
                   d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z"
                 />
                 <path
-                  stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
                   d="M9.879 16.121A3 3 0 1012.015 11L11 14H9c0 .768.293 1.536.879 2.121z"
                 />
               </svg>
@@ -94,8 +126,8 @@
               </h1>
 
               <p class="mt-3 text-gray-500 dark:text-gray-300">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident ab nulla quod dignissimos vel non
-                corrupti doloribus voluptatum eveniet
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident ab nulla quod
+                dignissimos vel non corrupti doloribus voluptatum eveniet
               </p>
             </div>
           </div>
@@ -106,16 +138,17 @@
             class="w-[28rem] h-[20rem] object-cover xl:w-[34rem] xl:h-[20rem] rounded-full"
             src="https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=755&q=80"
             alt=""
-          >
+          />
         </div>
       </div>
 
-      <hr class="border-gray-200 my-12 dark:border-gray-700">
+      <hr class="border-gray-200 my-12 dark:border-gray-700" />
 
       <div class="grid grid-cols-2 gap-8 md:grid-cols-6 lg:grid-cols-5">
         <div class="flex items-center justify-center col-span-1 md:col-span-2 lg:col-span-1">
           <svg
-            class="h-12 text-gray-500 fill-current dark:text-gray-300" xmlns="http://www.w3.org/2000/svg"
+            class="h-12 text-gray-500 fill-current dark:text-gray-300"
+            xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 266 100"
           >
             <path fill="none" d="M0 0h266v100H0z" />
@@ -127,14 +160,19 @@
 
         <div class="flex items-center justify-center col-span-1 md:col-span-2 lg:col-span-1">
           <svg
-            class="h-10 text-gray-500 fill-current dark:text-gray-300" xmlns="http://www.w3.org/2000/svg"
-            xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 316 60"
+            class="h-10 text-gray-500 fill-current dark:text-gray-300"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            viewBox="0 0 316 60"
           >
             <g transform="translate(9.259 4.552) scale(.4941)">
               <path
                 d="M52.1 102.1V82.5c20.8 0 36.8-20.6 28.9-42.4-3-8.1-9.4-14.6-17.5-17.5-21.8-7.9-42.4 8.1-42.4 28.9H1.5c0-33.1 32-58.9 66.7-48.1 15.2 4.7 27.2 16.8 31.9 31.9 10.8 34.8-14.9 66.8-48 66.8z"
               />
-              <path d="M32.6 63h19.5v19.5H32.6zm-15 34.5v-15h15v15h-15zM5 70h12.6v12.5H5z" fill-rule="evenodd" />
+              <path
+                d="M32.6 63h19.5v19.5H32.6zm-15 34.5v-15h15v15h-15zM5 70h12.6v12.5H5z"
+                fill-rule="evenodd"
+              />
               <path
                 d="M181.5 30.2c-5.8-4-13-6.1-21.4-6.1h-18.3v58.1h18.3c8.4 0 15.6-2.1 21.4-6.4 3.2-2.2 5.7-5.4 7.4-9.3s2.6-8.5 2.6-13.7c0-5.1-.9-9.7-2.6-13.6-1.7-3.8-4.2-6.9-7.4-9zm-29 3.8h5.8c6.4 0 11.7 1.3 15.7 3.7 4.4 2.7 6.7 7.8 6.7 15.1 0 7.6-2.3 12.9-6.7 15.8-3.8 2.5-9.1 3.8-15.6 3.8h-5.8V34z"
               />
@@ -157,7 +195,8 @@
 
         <div class="flex items-center justify-center col-span-1 md:col-span-2 lg:col-span-1">
           <svg
-            class="h-8 mt-2 text-gray-500 fill-current dark:text-gray-300" viewBox="0 0 398 120"
+            class="h-8 mt-2 text-gray-500 fill-current dark:text-gray-300"
+            viewBox="0 0 398 120"
             xmlns="http://www.w3.org/2000/svg"
           >
             <g fill-rule="nonzero">
@@ -173,7 +212,8 @@
 
         <div class="flex items-center justify-center col-span-1 md:col-span-3 lg:col-span-1">
           <svg
-            class="h-5 mt-1 text-gray-500 fill-current dark:text-gray-300" xmlns="http://www.w3.org/2000/svg"
+            class="h-5 mt-1 text-gray-500 fill-current dark:text-gray-300"
+            xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 278.7 36.3"
           >
             <g>
@@ -187,7 +227,8 @@
 
         <div class="flex items-center justify-center col-span-2 md:col-span-3 lg:col-span-1">
           <svg
-            class="h-8 text-gray-500 fill-current dark:text-gray-300" viewBox="0 0 2270 546"
+            class="h-8 text-gray-500 fill-current dark:text-gray-300"
+            viewBox="0 0 2270 546"
             xmlns="http://www.w3.org/2000/svg"
           >
             <g fill-rule="evenodd">

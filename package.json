@@ -1,8 +1,15 @@
 {
-  "name": "@sfxcode/vitepress-blog-starter",
-  "version": "0.7.5",
-  "description": "Vitepress Starter, UnoCSS, Anu, Blog",
+  "name": "@jcamp/vitepress-tailwind-blog-starter",
+  "version": "0.1.0",
+  "description": "Vitepress Starter, Tailwind CSS, DaisyUI, Blog",
+  "author": "John Campion",
   "license": "MIT",
+  "keywords": [
+    "Vitepress",
+    "Starter",
+    "TailwindCSS",
+    "DaisyUI"
+  ],
   "main": "index.js",
   "scripts": {
     "dev": "vitepress dev docs",
@@ -10,36 +17,43 @@
     "serve": "vitepress serve docs",
     "changelog": "conventional-changelog -p conventionalcommits -i CHANGELOG.md -s -r 0 -n ./changelog/config.js"
   },
-  "keywords": [
-    "Vitepress",
-    "Starter",
-    "UnoCSS",
-    "Anu"
-  ],
-  "author": "Tom Lamers",
   "devDependencies": {
     "@antfu/eslint-config": "^0.36.0",
-    "@anu-vue/preset-theme-default": "^0.12.0",
     "@iconify-json/bx": "^1.1.6",
     "@iconify-json/fluent-emoji": "^1.1.12",
     "@iconify-json/heroicons-outline": "^1.1.6",
     "@iconify-json/logos": "^1.1.23",
+    "@jcamp/tailwindcss-plugin-icons": "^0.4.0",
+    "@tailwindcss/typography": "^0.5.4",
     "@types/node": "^18.15.3",
-    "@unocss/preset-icons": "^0.50.6",
-    "@unocss/preset-uno": "0.50.6",
     "@vueuse/core": "^9.13.0",
-    "anu-vue": "^0.12.0",
+    "autoprefixer": "^10.4.13",
     "conventional-changelog-cli": "^2.2.2",
+    "daisyui-vue": "0.0.1-alpha.15",
     "date-fns": "^2.29.3",
     "eslint": "^8.36.0",
     "flexsearch": "^0.7.31",
     "fs-extra": "^11.1.0",
     "gray-matter": "^4.0.3",
     "markdown-it": "^13.0.1",
+    "postcss": "^8.4.20",
+    "tailwindcss": "^3.2.4",
     "typescript": "^5.0.2",
-    "unocss": "^0.50.6",
-    "vitepress": "1.0.0-alpha.60",
+    "vitepress": "1.0.0-alpha.61",
     "vitepress-plugin-search": "1.0.4-alpha.19",
     "vue": "^3.2.47"
+  },
+  "postcss": {
+    "plugins": {
+      "tailwindcss": {},
+      "autoprefixer": {}
+    }
+  },
+  "pnpm": {
+    "peerDependencyRules": {
+      "ignoreMissing": [
+        "@algolia/client-search"
+      ]
+    }
   }
 }

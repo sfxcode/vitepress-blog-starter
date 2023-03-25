@@ -1,8 +1,8 @@
 import DefaultTheme from 'vitepress/theme'
 import type { App } from 'vue'
-import { anu } from 'anu-vue'
-import 'uno.css'
-import Feature from './components/uno/Feature.vue'
+import './tailwind.postcss'
+import daisyui from 'daisyui-vue'
+import Feature from './components/tailwind/Feature.vue'
 import Posts from './components/blog/Posts.vue'
 import Post from './components/blog/Post.vue'
 import PostDetail from './components/blog/PostDetail.vue'
@@ -13,9 +13,7 @@ import AuthorDetail from './components/blog/AuthorDetail.vue'
 export default {
   ...DefaultTheme,
   enhanceApp({ app }: { app: App }) {
-    app.use(anu, {
-      registerComponents: true,
-    })
+    app.use(daisyui) // register all components expect icons
 
     app.component('Feature', Feature)
     app.component('Posts', Posts)
