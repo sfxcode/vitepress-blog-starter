@@ -1,16 +1,13 @@
 ---
-
 title: How to quickly deploy a static website
 author: Peter Parker
 date: 2022-09-11
-
+blog: post
 ---
 
 Static websites are now used to bootstrap lots of websites and are becoming the basis for a variety of tools that even influence both web designers and developers influence both web designers and developers.
 
 ---
-
-<PostDetail>
 
 ## Obstrepuere tanto defenderet acta corpore cum lacum
 
@@ -64,8 +61,3 @@ Iuppiter potero cumque. Ipse peremi sunt puta humili, et coniunx sensit
 
 Unam maioris. Musa ille, cum hasta septem, **relatu et** verbis, frondes me
 donec mixtusque, depressitque.
-
-</PostDetail>
-
-
-

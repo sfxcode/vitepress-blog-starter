@@ -1,16 +1,14 @@
 ---
 date: 2022-08-10
 title: Basic Markdown Formatting
+blog: post
 category: Tutorial
 tags: vue
-
 ---
 
-The Ultimate Guide to Markdown. __This will also be bold__
+The Ultimate Guide to Markdown. **This will also be bold**
 
 ---
-
-<PostDetail>
 
 ## Markdown Formatting
 
@@ -27,21 +25,21 @@ The Ultimate Guide to Markdown. __This will also be bold__
 
     *This text will be italic*
     _This will also be italic_
-    
+
     **This text will be bold**
     __This will also be bold__
-    
+
     _You **can** combine them_
 
 Result:
 
-*This text will be italic*
+_This text will be italic_
 
 _This will also be italic_
 
 **This text will be bold**
 
-__This will also be bold__
+**This will also be bold**
 
 _You **can** combine them_
 
@@ -56,15 +54,15 @@ _You **can** combine them_
 
 Result:
 
-* Milk
-* Bread
-    * Wholegrain
-* Butter
+- Milk
+- Bread
+  - Wholegrain
+- Butter
 
 **Ordered:**
 
-    1. Tidy the kitchen  
-    2. Prepare ingredients  
+    1. Tidy the kitchen
+    2. Prepare ingredients
     3. Cook delicious things
 
 Result:
@@ -99,6 +97,7 @@ Result:
 Result:
 
 As Kanye West said:
+
 > We're living the future so
 > the present is our past.
 
@@ -131,9 +130,8 @@ Result:
 
 **The quick brown [fox][1], jumped over the lazy [dog][2].**
 
-[1]: https://en.wikipedia.org/wiki/Fox "Wikipedia: Fox"
-
-[2]: https://en.wikipedia.org/wiki/Dog "Wikipedia: Dog"
+[1]: https://en.wikipedia.org/wiki/Fox 'Wikipedia: Fox'
+[2]: https://en.wikipedia.org/wiki/Dog 'Wikipedia: Dog'
 
 ### Escaping
 
@@ -179,9 +177,9 @@ Result:
 
 ```javascript
 function fancyAlert(arg) {
-    if (arg) {
-        $.facebox({div: '#foo'})
-    }
+  if (arg) {
+    $.facebox({ div: '#foo' })
+  }
 }
 ```
 
@@ -205,7 +203,7 @@ You can create tables by assembling a list of words and dividing them with hyphe
 separating each column with a pipe `|`:
 
 | First Header                | Second Header                |
-|-----------------------------|------------------------------|
+| --------------------------- | ---------------------------- |
 | Content from cell 1         | Content from cell 2          |
 | Content in the first column | Content in the second column |
 
@@ -236,6 +234,4 @@ GitHub supports emoji! Check out the [Emoji Cheat Sheet](https://github.com/sfxc
 
 ## References
 
-* https://guides.github.com/features/mastering-markdown/
-
-</PostDetail>
+- https://guides.github.com/features/mastering-markdown/

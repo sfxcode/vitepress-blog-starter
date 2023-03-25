@@ -5,6 +5,10 @@ Searched for some VitePress Blog demo code without success - decided to make a s
 Hopefully it will be usefull for someone else ...
 
 Forked from [VitePress Blog Starter](https://github.com/sfxcode/vitepress-blog-starter)
+Code Ideas From:
+[Vue Blog](https://github.com/vuejs/blog)
+[clark-cui](https://github.com/clark-cui/vitepress-blog-zaun/)
+[Charles7c](https://github.com/Charles7c/charles7c.github.io/)
 
 ## Features
 

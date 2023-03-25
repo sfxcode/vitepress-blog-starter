@@ -9,9 +9,11 @@ import PostDetail from './components/blog/PostDetail.vue'
 import PostIcon from './components/blog/PostIcon.vue'
 import PostAuthor from './components/blog/PostAuthor.vue'
 import AuthorDetail from './components/blog/AuthorDetail.vue'
+import MyLayout from './MyLayout.vue'
 
 export default {
   ...DefaultTheme,
+  Layout: MyLayout,
   enhanceApp({ app }: { app: App }) {
     app.use(daisyui) // register all components expect icons
 
