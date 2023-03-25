@@ -6,7 +6,7 @@ export default defineConfig({
   title: 'VitePress Blog Starter',
   description: 'Blog included. Built on top of TailwindCSS and Daisy UI.',
   base: '/',
-  // cleanUrls: true, // breaks posts/authors
+  cleanUrls: true,
   themeConfig: {
     footer: {
       message: 'VitePress Blog Starter',
