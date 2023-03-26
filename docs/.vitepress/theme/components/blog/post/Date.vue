@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import usePosts from '../../composables/usePosts'
+import usePosts from '../../../composables/usePosts'
 const { post, nextPost, prevPost } = usePosts()
 
 function getDateTime() {

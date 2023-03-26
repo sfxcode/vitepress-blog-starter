@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import PostAuthor2 from './PostAuthor2.vue'
-import usePosts from '../../composables/usePosts'
-import PostIcon from './PostIcon.vue'
+import usePosts from '../../../composables/usePosts'
+import PostIcon from '../PostIcon.vue'
 
 defineProps<{
   insideDoc?: boolean

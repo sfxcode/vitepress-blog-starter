@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import usePosts from '../../../composables/usePosts'
-import Date from '../Date.vue'
-import PostDetails from '../PostDetails.vue'
+import usePosts from '../composables/usePosts'
+import Date from '../components/blog/post/Date.vue'
+import PostDetails from '../components/blog/post/PostDetails.vue'
 const { post } = usePosts()
 </script>
 <template>

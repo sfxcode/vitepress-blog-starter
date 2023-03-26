@@ -1,10 +1,10 @@
 <script setup>
 import { useData } from 'vitepress'
 import DefaultTheme from '@jcamp/vitepress-blog-theme/theme'
-import PostTop from './components/blog/post/PostTop.vue'
-import PostBottom from './components/blog/post/PostBottom.vue'
-import AsideTop from './components/blog/post/AsideTop.vue'
-import AsideBottom from './components/blog/post/AsideBottom.vue'
+import PostTop from './PostTop.vue'
+import PostBottom from './PostBottom.vue'
+import AsideTop from './PostAsideTop.vue'
+import AsideBottom from './PostAsideBottom.vue'
 
 const { Layout } = DefaultTheme
 const { frontmatter } = useData()

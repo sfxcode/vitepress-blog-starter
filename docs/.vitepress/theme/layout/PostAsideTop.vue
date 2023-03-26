@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import PostAuthor2 from '../PostAuthor2.vue'
-import PostIcon from '../PostIcon.vue'
-import usePosts from '../../../composables/usePosts'
+import PostAuthor2 from '../components/blog/post/PostAuthor2.vue'
+import PostIcon from '../components/blog/PostIcon.vue'
+import usePosts from '../composables/usePosts'
 const { post } = usePosts()
 </script>
 <template>

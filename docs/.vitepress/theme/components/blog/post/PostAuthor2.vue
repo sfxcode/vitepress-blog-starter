@@ -1,8 +1,7 @@
 <script setup lang="ts">
-import { useData } from 'vitepress'
-import usePosts from '../../composables/usePosts'
 import { computed } from 'vue'
-import useAuthors from '../../composables/useAuthors'
+import usePosts from '../../../composables/usePosts'
+import useAuthors from '../../../composables/useAuthors'
 
 defineProps<{
   insideDoc?: boolean

@@ -1,11 +1,11 @@
 <script setup lang="ts">
-import usePosts from '../../composables/usePosts'
+import usePosts from '../../../composables/usePosts'
 
 defineProps<{
   insideDoc?: boolean
 }>()
 
-const { currentPost: post, nextPost, prevPost } = usePosts()
+const { nextPost, prevPost } = usePosts()
 </script>
 <template>
   <footer

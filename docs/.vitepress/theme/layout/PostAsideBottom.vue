@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import PostLinks from '../PostLinks.vue'
+import PostLinks from '../components/blog/post/PostLinks.vue'
 </script>
 <template>
   <PostLinks />

@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { useData } from 'vitepress'
 import { computed } from 'vue'
-import useAuthors from '../../composables/useAuthors'
+import useAuthors from '../../../composables/useAuthors'
 
 const props = defineProps<{
   name: string
