@@ -1,6 +1,6 @@
 <script setup>
 import { useData } from 'vitepress'
-import DefaultTheme from '@jcamp/vitepress-blog-theme/theme'
+import DefaultTheme from 'vitepress/theme'
 import PostTop from './PostTop.vue'
 import PostBottom from './PostBottom.vue'
 import AsideTop from './PostAsideTop.vue'
@@ -26,3 +26,11 @@ const { frontmatter } = useData()
     </template>
   </Layout>
 </template>
+
+<style scoped>
+:deep(.aside) {
+  order: v-bind('frontmatter.aside==="left" ? 1 : 2');
+  padding-left: v-bind('frontmatter.aside==="left" ? "unset" : "32px"');
+  padding-right: v-bind('frontmatter.aside==="left" ? "32px" : "unset"');
+}
+</style>
