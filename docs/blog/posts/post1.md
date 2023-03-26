@@ -1,7 +1,6 @@
 ---
 date: 2022-08-10
 title: Basic Markdown Formatting
-blog: post
 category: Tutorial
 tags: vue
 ---

@@ -40,6 +40,12 @@ export default defineConfig({
       ssr: false,
     },
   },
+  async transformPageData(pageData) {
+    console.log(pageData.relativePath)
+    pageData.frontmatter.blog = pageData.relativePath.indexOf('blog/') >= 0 ? 'blog' : ''
+    pageData.frontmatter.aside =
+      pageData.relativePath.indexOf('blog/') >= 0 ? 'left' : pageData.frontmatter.aside
+  },
 })
 
 function nav() {

@@ -13,4 +13,11 @@ const props = defineProps<{
   </div>
 </template>
 
-<style scoped></style>
+<style scoped>
+a {
+  font-weight: 500;
+  color: var(--vp-c-brand);
+  text-decoration-style: dotted;
+  transition: color 0.25s;
+}
+</style>

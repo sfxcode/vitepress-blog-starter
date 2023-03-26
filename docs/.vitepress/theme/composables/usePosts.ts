@@ -2,24 +2,22 @@ import type { Ref } from 'vue'
 import { computed, ref } from 'vue'
 import { useData, useRoute } from 'vitepress'
 import type { Post } from './posts.data'
-import { data } from './posts.data'
+import { data as posts } from './posts.data'
 
 export default () => {
   const { site } = useData()
-
-  const allPosts: Ref<Post[]> = ref(data)
 
   const route = useRoute()
 
   const path = route.path
 
   function findCurrentIndex() {
-    return allPosts.value.findIndex(p => `${site.value.base}blog${p.href}` === route.path)
+    return posts.findIndex((p) => `${site.value.base}blog${p.href}` === route.path)
   }
 
-  const currentPost = computed(() => allPosts.value[findCurrentIndex()])
-  const nextPost = computed(() => allPosts.value[findCurrentIndex() - 1])
-  const prevPost = computed(() => allPosts.value[findCurrentIndex() + 1])
+  const post = computed(() => posts[findCurrentIndex()])
+  const nextPost = computed(() => posts[findCurrentIndex() - 1])
+  const prevPost = computed(() => posts[findCurrentIndex() + 1])
 
-  return { allPosts, currentPost, nextPost, prevPost, path }
+  return { posts, post, nextPost, prevPost, path }
 }

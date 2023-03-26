@@ -1,7 +1,10 @@
 <script setup>
 import { useData } from 'vitepress'
 import DefaultTheme from '@jcamp/vitepress-blog-theme/theme'
-import PostTitle from './components/blog/PostTitle.vue'
+import PostTop from './components/blog/post/PostTop.vue'
+import PostBottom from './components/blog/post/PostBottom.vue'
+import AsideTop from './components/blog/post/AsideTop.vue'
+import AsideBottom from './components/blog/post/AsideBottom.vue'
 
 const { Layout } = DefaultTheme
 const { frontmatter } = useData()
@@ -9,11 +12,17 @@ const { frontmatter } = useData()
 
 <template>
   <Layout>
-    <template #content-before>
-      <div class="mt-6 w-full bg-gray-800">Large Title Here</div>
-    </template>
     <template #doc-before>
-      <PostTitle v-if="frontmatter.blog" />
+      <PostTop v-if="frontmatter.blog"></PostTop>
+    </template>
+    <template #doc-footer-before>
+      <PostBottom v-if="frontmatter.blog"></PostBottom>
+    </template>
+    <template #aside-top>
+      <AsideTop v-if="frontmatter.blog"></AsideTop>
+    </template>
+    <template #aside-bottom>
+      <AsideBottom v-if="frontmatter.blog"></AsideBottom>
     </template>
   </Layout>
 </template>

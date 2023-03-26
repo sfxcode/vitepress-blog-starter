@@ -4,7 +4,7 @@ import useAuthors from '../../composables/useAuthors'
 
 const { site } = useData()
 
-const { currentAuthor: author, path, prevAuthor, nextAuthor } = useAuthors()
+const { author, prevAuthor, nextAuthor } = useAuthors()
 </script>
 
 <template>

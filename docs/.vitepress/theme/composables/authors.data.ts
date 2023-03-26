@@ -3,7 +3,9 @@ import { createContentLoader } from 'vitepress'
 export interface Author {
   name: string
   href: string
-  avatar: string
+  avatar?: string
+  gravatar?: string
+  twitter?: string
   excerpt: string | undefined
 }
 
@@ -16,7 +18,9 @@ export default createContentLoader('blog/authors/*.md', {
     return raw
       .map(({ url, frontmatter, excerpt }) => ({
         name: frontmatter.name,
-        avatar: frontmatter.avatar ?? '',
+        avatar: frontmatter.avatar ?? null,
+        gravatar: frontmatter.gravatar ?? null,
+        twitter: frontmatter.twitter ?? null,
         href: url.replace('/blog/', '/'),
         excerpt,
       }))

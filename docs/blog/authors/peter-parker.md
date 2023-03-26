@@ -1,11 +1,10 @@
 ---
 name: Peter Parker
-avatar: https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/thomas-lean.png
+gravatar: eca93da2c67aadafe35d477aa8f454b8
+twitter: '@youyuxi'
 ---
 
 <AuthorDetail>
-
-
 
 ## Cruore nato deorum olivi et unus actum
 
