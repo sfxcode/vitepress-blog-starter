@@ -1,8 +1,117 @@
-import { defineConfig } from 'vitepress'
+import type { DefaultTheme } from 'vitepress'
+import { defineConfigWithTheme } from 'vitepress'
 import { SearchPlugin } from 'vitepress-plugin-search'
 import { version } from '../../package.json'
+import { genFeed } from './genFeed.js'
 
-export default defineConfig({
+export interface BlogFeedConfig {
+  /**
+   * baseUrl
+   *
+   * @example 'https://vitepress.site/blog'
+   * @default 'localhost/blog'  Feed won't have accurate links
+   */
+  baseUrl?: string
+
+  /**
+   * The title of the feed
+   *
+   * @example 'My Blog Feed'
+   * @default blog.title
+   */
+  title?: string
+
+  /**
+   * The description of the feed
+   *
+   * @example 'My Blog Feeds Description'
+   * @default blog.description
+   */
+  description?: string
+
+  /**
+   * The id of the feed
+   *
+   * @default baseUrl
+   */
+  id?: string
+
+  /**
+   * The link of the feed
+   *
+   * @default baseUrl
+   */
+  link?: string
+
+  /**
+   * The language of the feed
+   *
+   * @default 'en'
+   */
+  language?: string
+
+  /**
+   * The image of the feed
+   *
+   * @default ''
+   */
+  image?: string
+
+  /**
+   * The favicon used in the RSS feed, added to the baseUrl
+   *
+   * @example '/feedfavicon.ico'
+   * @default '/favicon.ico'
+   */
+  favicon?: string
+
+  /**
+   * The copyright used in the RSS feed
+   *
+   * @example 'Copyright (c) 2023-present, Me and blog contributors'
+   */
+  copyright?: string
+}
+
+export interface BlogConfig {
+  /**
+   * The title of the blog
+   *
+   * @example 'My Blog'
+   */
+  title?: string
+
+  /**
+   * The description of the blog, used as a subtitle on the blog's home page
+   *
+   * @example 'My Interesting Content'
+   */
+  description?: string
+
+  /**
+   * The blog's url relative to the site
+   *
+   * @example '/myblog'
+   * @default '/blog'
+   */
+  url?: string
+
+  /**
+   * Config options related to the blog's generated RSS feed
+   *
+   */
+  feed?: BlogFeedConfig
+}
+
+export interface BlogThemeConfig extends DefaultTheme.Config {
+  /**
+   * Config options related to the blog
+   *
+   */
+  blog?: BlogConfig
+}
+
+export default defineConfigWithTheme<BlogThemeConfig>({
   title: 'VitePress Blog Starter',
   description: 'Blog included. Built on top of TailwindCSS and Daisy UI.',
   base: '/',
@@ -41,11 +150,12 @@ export default defineConfig({
     },
   },
   async transformPageData(pageData) {
-    console.log(pageData.relativePath)
-    pageData.frontmatter.blog = pageData.relativePath.indexOf('blog/') >= 0 ? 'blog' : ''
-    pageData.frontmatter.aside =
-      pageData.relativePath.indexOf('blog/') >= 0 ? 'left' : pageData.frontmatter.aside
+    pageData.frontmatter.blog = pageData.relativePath.includes('blog/') ? 'blog' : ''
+    pageData.frontmatter.aside = pageData.relativePath.includes('blog/')
+      ? 'left'
+      : pageData.frontmatter.aside
   },
+  buildEnd: genFeed,
 })
 
 function nav() {

@@ -33,6 +33,7 @@
     "daisyui-vue": "0.0.1-alpha.15",
     "date-fns": "^2.29.3",
     "eslint": "^8.36.0",
+    "feed": "^4.2.2",
     "flexsearch": "^0.7.31",
     "fs-extra": "^11.1.0",
     "gray-matter": "^4.0.3",
