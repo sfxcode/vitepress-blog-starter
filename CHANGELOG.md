@@ -1,10 +1,19 @@
-### [0.7.5](https://github.com/sfxcode/vitepress-blog-starter/compare/v0.7.4...v0.7.5) (2023-03-18)
+### [0.7.6](https://github.com/sfxcode/vitepress-blog-starter/compare/v0.7.4...v0.7.6) (2023-03-30)
+
+
+### Bug Fixes
+
+* **Post:** Change read more href ([a584072](https://github.com/sfxcode/vitepress-blog-starter/commit/a5840728045f6cd6c6bc319b858f6e1da9b219e3))
 
 
 ### Maintenance
 
+* **.gitignore:** Add vitepress ignore ([bef8dc9](https://github.com/sfxcode/vitepress-blog-starter/commit/bef8dc9cba3f208b7da6ec77de151be504c753a2))
+* **Dependencies:** Update Vitepress ([4cb8b0a](https://github.com/sfxcode/vitepress-blog-starter/commit/4cb8b0adfadb0623ce5e9880f2dcafc9eba019f3))
+* **Dependencies:** Update Vitepress ([de1263f](https://github.com/sfxcode/vitepress-blog-starter/commit/de1263f5c72feeccf94baced7942571be5bb24fa))
 * **Dependencies:** Update Vitepress ([33f04cb](https://github.com/sfxcode/vitepress-blog-starter/commit/33f04cba899f1d8ba1dfb7735174424b2b8235e1))
 * **Dependencies:** Update Vitepress to lates alpha version ([0a4b04a](https://github.com/sfxcode/vitepress-blog-starter/commit/0a4b04a1a69f1cfcb493a5894e92a65453dbf64a))
+* **theme:** Support for using anu default themes ([fde4b81](https://github.com/sfxcode/vitepress-blog-starter/commit/fde4b814a280e02e4fdb5adecb388e27148e9a31))
 
 ### [0.7.4](https://github.com/sfxcode/vitepress-blog-starter/compare/v0.7.3...v0.7.4) (2023-03-05)
 
