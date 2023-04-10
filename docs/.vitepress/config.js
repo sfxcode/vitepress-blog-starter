@@ -40,7 +40,10 @@ export default defineConfig({
       Unocss({
         configFile: '../../unocss.config.ts',
       }),
-      SearchPlugin(),
+      SearchPlugin({
+        tokenize: 'full',
+        resolution: 9,
+      }),
     ],
     build: {
       ssr: false,
