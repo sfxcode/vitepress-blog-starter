@@ -1,0 +1,1 @@
+import{_ as t,B as s,o,c as a,D as n}from"./chunks/framework.3e14f3e9.js";const l=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"guide/features/unocss.md"}'),r={name:"guide/features/unocss.md"};function c(u,p,_,d,i,m){const e=s("Feature");return o(),a("div",null,[n(e)])}const $=t(r,[["render",c]]);export{l as __pageData,$ as default};
