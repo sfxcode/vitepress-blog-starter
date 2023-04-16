@@ -38,7 +38,7 @@
     "markdown-it": "^13.0.1",
     "typescript": "^5.0.4",
     "unocss": "^0.51.4",
-    "vitepress": "1.0.0-alpha.70",
+    "vitepress": "1.0.0-alpha.71",
     "vue": "^3.2.47"
   }
 }
