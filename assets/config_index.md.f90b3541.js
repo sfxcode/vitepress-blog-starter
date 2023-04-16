@@ -1,0 +1,1 @@
+import{_ as e,o as t,c as n,C as o}from"./chunks/framework.ac9755fe.js";const u=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"config/index.md"}'),s={name:"config/index.md"},a=o("p",null,"Configs Overview",-1),c=[a];function r(i,d,_,p,f,l){return t(),n("div",null,c)}const x=e(s,[["render",r]]);export{u as __pageData,x as default};
