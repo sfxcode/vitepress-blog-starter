@@ -1,16 +1,22 @@
 import Unocss from 'unocss/vite'
 import { defineConfig } from 'vitepress'
-import { SearchPlugin } from 'vitepress-plugin-search'
 import { version } from '../../package.json'
 
 export default defineConfig({
-  title: 'VitePress Blog Starter',
-  description: 'Blog included. Built on top of UnoCSS and Anu.',
   base: '/vitepress-blog-starter/',
+  description: 'Blog included. Built on top of UnoCSS and Anu.',
+  markdown: {
+    headers: {
+      level: [0, 0],
+    },
+  },
   themeConfig: {
     footer: {
       message: 'VitePress Blog Starter',
       copyright: 'Copyright © 2022 SFXCode',
+    },
+    search: {
+      provider: 'local',
     },
     socialLinks: [
       { icon: 'github', link: 'https://github.com/sfxcode/vitepress-blog-starter' },
@@ -30,24 +36,13 @@ export default defineConfig({
     },
 
   },
-  markdown: {
-    headers: {
-      level: [0, 0],
-    },
-  },
+  title: 'VitePress Blog Starter',
   vite: {
     plugins: [
       Unocss({
         configFile: '../../unocss.config.ts',
       }),
-      SearchPlugin({
-        tokenize: 'full',
-        resolution: 9,
-      }),
     ],
-    build: {
-      ssr: false,
-    },
   },
 })
 

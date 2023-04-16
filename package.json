@@ -1,6 +1,6 @@
 {
   "name": "@sfxcode/vitepress-blog-starter",
-  "version": "0.7.7",
+  "version": "0.7.8",
   "description": "Vitepress Starter, UnoCSS, Anu, Blog",
   "license": "MIT",
   "main": "index.js",
@@ -25,9 +25,9 @@
     "@iconify-json/heroicons-outline": "^1.1.6",
     "@iconify-json/logos": "^1.1.24",
     "@types/node": "^18.15.11",
-    "@unocss/preset-icons": "^0.51.2",
-    "@unocss/preset-uno": "0.51.2",
-    "@vueuse/core": "^9.13.0",
+    "@unocss/preset-icons": "^0.51.4",
+    "@unocss/preset-uno": "0.51.4",
+    "@vueuse/core": "^10.0.2",
     "anu-vue": "^0.13.1",
     "conventional-changelog-cli": "^2.2.2",
     "date-fns": "^2.29.3",
@@ -37,9 +37,8 @@
     "gray-matter": "^4.0.3",
     "markdown-it": "^13.0.1",
     "typescript": "^5.0.4",
-    "unocss": "^0.51.2",
-    "vitepress": "1.0.0-alpha.65",
-    "vitepress-plugin-search": "1.0.4-alpha.20",
+    "unocss": "^0.51.4",
+    "vitepress": "1.0.0-alpha.69",
     "vue": "^3.2.47"
   }
 }
