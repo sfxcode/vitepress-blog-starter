@@ -10,7 +10,7 @@ Hopefully it will be usefull for someone else ...
 * [Anu](https://github.com/jd-solanki/anu) for UI Elements
 * Blog Demo with Posts and Authors
 * Blog functions by Composables
-* Local Search [vitepress-plugin-search](https://github.com/emersonbottero/vitepress-plugin-search)
+* Local Search by vitepress
 
 ## Useage with pnpm
 
