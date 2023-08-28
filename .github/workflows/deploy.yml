@@ -5,7 +5,6 @@ on:
     tags:
       - v[0-9]+.[0-9]+.[0-9]+
 
-
 jobs:
   deploy:
     runs-on: ubuntu-latest
@@ -17,13 +16,6 @@ jobs:
         with:
           version: 6.16.1
 
-      - name: Update CHANGELOG
-        id: changelog
-        uses: requarks/changelog-action@v1
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-          tag: ${{ github.ref_name }}
-
 
       - name: Set node version to 16
         uses: actions/setup-node@v2
@@ -34,6 +26,31 @@ jobs:
       - run: pnpm install
 
       - run: pnpm build
+
+
+      - name: Update CHANGELOG
+        id: changelog
+        uses: requarks/changelog-action@v1
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          tag: ${{ github.ref_name }}
+
+      - name: Create Release
+        uses: ncipollo/release-action@v1.12.0
+        with:
+          allowUpdates: true
+          draft: false
+          makeLatest: true
+          name: ${{ github.ref_name }}
+          body: ${{ steps.changelog.outputs.changes }}
+          token: ${{ github.token }}
+
+      - name: Commit CHANGELOG.md
+        uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          branch: main
+          commit_message: 'docs: update CHANGELOG.md for ${{ github.ref_name }} [skip ci]'
+          file_pattern: CHANGELOG.md
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
