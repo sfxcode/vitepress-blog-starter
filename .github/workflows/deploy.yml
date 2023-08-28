@@ -19,9 +19,6 @@ jobs:
       - name: Update CHANGELOG
         id: changelog
         uses: requarks/changelog-action@v1
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-          tag: ${{ github.ref_name }}
 
 
       - name: Set node version to 16
