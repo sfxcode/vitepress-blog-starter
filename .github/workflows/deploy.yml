@@ -2,8 +2,9 @@ name: Deploy
 
 on:
   push:
-    branches:
-      - main
+    tags:
+      - v[0-9]+.[0-9]+.[0-9]+
+
 
 jobs:
   deploy:
@@ -21,6 +22,7 @@ jobs:
         uses: requarks/changelog-action@v1
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
+          tag: ${{ github.ref_name }}
 
 
       - name: Set node version to 16
