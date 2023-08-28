@@ -16,6 +16,14 @@ jobs:
         with:
           version: 6.16.1
 
+      - name: Update CHANGELOG
+        id: changelog
+        uses: requarks/changelog-action@v1
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          tag: ${{ github.ref_name }}
+
+
       - name: Set node version to 16
         uses: actions/setup-node@v2
         with:

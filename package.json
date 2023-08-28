@@ -7,8 +7,7 @@
   "scripts": {
     "dev": "vitepress dev docs",
     "build": "vitepress build docs",
-    "serve": "vitepress serve docs",
-    "changelog": "conventional-changelog -p conventionalcommits -i CHANGELOG.md -s -r 0 -n ./changelog/config.js"
+    "serve": "vitepress serve docs"
   },
   "keywords": [
     "Vitepress",
