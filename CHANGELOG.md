@@ -1,3 +1,8 @@
+## [v0.8.4] - 2023-08-28
+### :sparkles: New Features
+- [`58312fb`](https://github.com/sfxcode/vitepress-blog-starter/commit/58312fbfcf442efeaa442cfabb85eb9a28d7e2e1) - **changelog**: Add Github Action *(commit by [@sfxcode](https://github.com/sfxcode))*
+
+
 ## [0.8.0](https://github.com/sfxcode/vitepress-blog-starter/compare/v0.7.4...v0.8.0) (2023-07-12)
 
 
@@ -129,3 +134,5 @@
 
 * **Initial:** First commit ([f1b500b](https://github.com/sfxcode/vitepress-blog-starter/commit/f1b500bd56fa4515f7bb54cb72384b416871afdf))
 
+
+[v0.8.4]: https://github.com/sfxcode/vitepress-blog-starter/compare/v0.8.3...v0.8.4
