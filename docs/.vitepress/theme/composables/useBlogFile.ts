@@ -1,7 +1,7 @@
-import path = require('path')
-import fs = require('fs')
-import { fileURLToPath } from 'url'
-import matter = require('gray-matter')
+import fs from 'node:fs'
+import path from 'node:path'
+import { fileURLToPath } from 'node:url'
+import matter from 'gray-matter'
 
 export default () => {
   function readFrontMatter(file: string, parentDir: string, cache: Map<any, any>) {

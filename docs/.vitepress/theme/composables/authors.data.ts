@@ -1,5 +1,5 @@
-import path = require('path')
-import fs = require('fs')
+import fs from 'node:fs'
+import path from 'node:path'
 import type { MarkdownRenderer } from 'vitepress'
 import { createMarkdownRenderer } from 'vitepress'
 import useBlogFile from './useBlogFile'
