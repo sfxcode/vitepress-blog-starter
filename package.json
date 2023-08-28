@@ -29,7 +29,6 @@
     "@unocss/preset-uno": "0.55.3",
     "@vueuse/core": "^10.4.1",
     "anu-vue": "^0.15.2",
-    "conventional-changelog-cli": "^4.0.0",
     "date-fns": "^2.30.0",
     "eslint": "^8.48.0",
     "flexsearch": "^0.7.31",
