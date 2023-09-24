@@ -1,3 +1,15 @@
+## [v0.8.5] - 2023-09-24
+### :sparkles: New Features
+- [`0206676`](https://github.com/sfxcode/vitepress-blog-starter/commit/020667679648ca32a29a3eadc3e8c6d7d3b42893) - **changelog**: Add Github Action *(commit by [@sfxcode](https://github.com/sfxcode))*
+- [`d04ed2f`](https://github.com/sfxcode/vitepress-blog-starter/commit/d04ed2f80abf557fc6eeb3c2d1f59c1c6ccaae87) - **changelog**: Add Github Action *(commit by [@sfxcode](https://github.com/sfxcode))*
+
+### :recycle: Refactors
+- [`02154d2`](https://github.com/sfxcode/vitepress-blog-starter/commit/02154d22e9c37d14bcc0c51972b885a5beee9c9a) - **Anu**: Remove Anu *(commit by [@sfxcode](https://github.com/sfxcode))*
+
+### :wrench: Chores
+- [`b8eb74c`](https://github.com/sfxcode/vitepress-blog-starter/commit/b8eb74c692078d15987da9da19617d8f67b14ae3) - **Dependencies**: New Version *(commit by [@sfxcode](https://github.com/sfxcode))*
+
+
 ## [v0.8.4] - 2023-08-28
 ### :sparkles: New Features
 - [`58312fb`](https://github.com/sfxcode/vitepress-blog-starter/commit/58312fbfcf442efeaa442cfabb85eb9a28d7e2e1) - **changelog**: Add Github Action *(commit by [@sfxcode](https://github.com/sfxcode))*
@@ -135,3 +147,4 @@
 
 
 [v0.8.4]: https://github.com/sfxcode/vitepress-blog-starter/compare/v0.8.3...v0.8.4
+[v0.8.5]: https://github.com/sfxcode/vitepress-blog-starter/compare/v0.8.4...v0.8.5
