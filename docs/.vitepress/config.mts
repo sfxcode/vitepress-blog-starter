@@ -4,7 +4,7 @@ import { version } from '../../package.json'
 
 export default defineConfig({
   base: '/vitepress-blog-starter/',
-  description: 'Blog included. Built on top of UnoCSS and Anu.',
+  description: 'Blog included. Built on top of VitePress and UnoCSS.',
   markdown: {
     headers: {
       level: [0, 0],
@@ -13,7 +13,7 @@ export default defineConfig({
   themeConfig: {
     footer: {
       message: 'VitePress Blog Starter',
-      copyright: 'Copyright © 2022 SFXCode',
+      copyright: 'Copyright © 2023 SFXCode',
     },
     search: {
       provider: 'local',
@@ -62,10 +62,6 @@ function nav() {
           text: 'UnoCSS',
           link: 'https://uno.antfu.me',
         },
-        {
-          text: 'Anu',
-          link: 'https://anu-vue.netlify.app',
-        },
       ],
     },
     {
@@ -94,7 +90,6 @@ function sidebarGuide() {
       collapsible: true,
       items: [
         { text: 'UnoCSS', link: '/guide/features/unocss' },
-        { text: 'Anu', link: '/guide/features/anu' },
       ],
     },
   ]
@@ -107,7 +102,6 @@ function sidebarConfig() {
       items: [
         { text: 'Introduction', link: '/config/' },
         { text: 'UnoCSS', link: '/config/unocss' },
-        { text: 'Anu', link: '/config/anu' },
       ],
     },
   ]

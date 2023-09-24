@@ -23,7 +23,6 @@
 * **Dependencies:** Update Vitepress to lates beta version ([34d6e55](https://github.com/sfxcode/vitepress-blog-starter/commit/34d6e551a7485b3b3df35c43ea93cee8eafac672))
 * **Dependencies:** Update Vitepress to latest version ([4ff7ba4](https://github.com/sfxcode/vitepress-blog-starter/commit/4ff7ba40b375b48c16f91d865f98540b90c1ae56))
 * **search:** add search options ([bc6f4a2](https://github.com/sfxcode/vitepress-blog-starter/commit/bc6f4a2b956a33058d2cabb70a98ed7716b8b48f))
-* **theme:** Support for using anu default themes ([fde4b81](https://github.com/sfxcode/vitepress-blog-starter/commit/fde4b814a280e02e4fdb5adecb388e27148e9a31))
 
 ## [0.7.4](https://github.com/sfxcode/vitepress-blog-starter/compare/v0.7.3...v0.7.4) (2023-03-05)
 
