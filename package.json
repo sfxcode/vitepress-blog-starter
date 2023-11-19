@@ -1,6 +1,6 @@
 {
   "name": "@sfxcode/vitepress-blog-starter",
-  "version": "0.8.65",
+  "version": "0.9.0",
   "description": "Vitepress Starter, UnoCSS, Anu, Blog",
   "license": "MIT",
   "main": "index.js",
