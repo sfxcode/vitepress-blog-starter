@@ -1,6 +1,6 @@
 # VitePress Blog Starter
 
-Starter Project for VitePres with Blog included.
+Starter Project for VitePress (1.5.x) with Blog Sample included.
 Searched for some VitePress Blog demo code without success - decided to make a sample project by my own.
 Hopefully it will be usefull for someone else ...
 
