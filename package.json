@@ -1,7 +1,7 @@
 {
   "name": "@sfxcode/vitepress-blog-starter",
   "type": "module",
-  "version": "0.10.0",
+  "version": "1.0.0",
   "description": "Vitepress Starter, UnoCSS, Anu, Blog",
   "author": "Tom Lamers",
   "license": "MIT",
@@ -18,7 +18,7 @@
     "serve": "vitepress serve docs",
     "lint": "eslint .",
     "lint:fix": "eslint --fix .",
-    "release": "npm run lint && npm run build && changelogen --major --release  && git push --follow-tags"
+    "release": "npm run lint && npm run build && changelogen --patch --release  && git push --follow-tags"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^3.11.2",
