@@ -1,3 +1,12 @@
+## [v0.10.0] - 2024-11-29
+### :wrench: Chores
+- [`16e7bbc`](https://github.com/sfxcode/vitepress-blog-starter/commit/16e7bbc813215d74a0319cb12fbadbed260c4ad3) - **Dependencies**: New VitePress Version 1.0.2 *(commit by [@sfxcode](https://github.com/sfxcode))*
+- [`37fe974`](https://github.com/sfxcode/vitepress-blog-starter/commit/37fe974389aee36c72a7e889b849b795a0464f1a) - **Dependencies**: New VitePress Version 1.5.0 *(commit by [@sfxcode](https://github.com/sfxcode))*
+- [`9e1a1ef`](https://github.com/sfxcode/vitepress-blog-starter/commit/9e1a1ef81dff68a6daabacd66f79152fd213314c) - **linting**: Fix all Lint Errors *(commit by [@sfxcode](https://github.com/sfxcode))*
+- [`bb81c5d`](https://github.com/sfxcode/vitepress-blog-starter/commit/bb81c5d0962da23a0ae6a08ffd8a6e60a32f3377) - **Release**: New Version *(commit by [@sfxcode](https://github.com/sfxcode))*
+- [`304d029`](https://github.com/sfxcode/vitepress-blog-starter/commit/304d029fe54351c08000baf1fd119b023d3a984f) - **release**: v0.10.0 *(commit by [@sfxcode](https://github.com/sfxcode))*
+
+
 ## v0.10.0
 
 [compare changes](https://github.com/sfxcode/vitepress-blog-starter/compare/v0.9.2...v0.10.0)
@@ -187,3 +196,4 @@
 [v0.9.0]: https://github.com/sfxcode/vitepress-blog-starter/compare/v0.8.5...v0.9.0
 [v0.9.1]: https://github.com/sfxcode/vitepress-blog-starter/compare/v0.9.0...v0.9.1
 [v0.9.2]: https://github.com/sfxcode/vitepress-blog-starter/compare/v0.9.1...v0.9.2
+[v0.10.0]: https://github.com/sfxcode/vitepress-blog-starter/compare/v0.9.2...v0.10.0
