@@ -9,7 +9,6 @@ Hello
 
 ---
 
-
 <PostDetail>
 
 ## Post Sample data
@@ -17,5 +16,3 @@ Hello
 :smile:
 
 </PostDetail>
-
-

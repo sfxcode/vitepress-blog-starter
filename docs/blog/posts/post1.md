@@ -27,10 +27,10 @@ The Ultimate Guide to Markdown. __This will also be bold__
 
     *This text will be italic*
     _This will also be italic_
-    
+
     **This text will be bold**
     __This will also be bold__
-    
+
     _You **can** combine them_
 
 Result:
@@ -63,8 +63,8 @@ Result:
 
 **Ordered:**
 
-    1. Tidy the kitchen  
-    2. Prepare ingredients  
+    1. Tidy the kitchen
+    2. Prepare ingredients
     3. Cook delicious things
 
 Result:
@@ -179,9 +179,9 @@ Result:
 
 ```javascript
 function fancyAlert(arg) {
-    if (arg) {
-        $.facebox({div: '#foo'})
-    }
+  if (arg) {
+    $.facebox({ div: '#foo' })
+  }
 }
 ```
 

@@ -24,4 +24,3 @@ features:
 - title: "Blog Demo included"
   details: Posts and Authors as sample predefinded. Composables for accessing data included.
 ---
-

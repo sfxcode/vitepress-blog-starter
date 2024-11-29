@@ -3,5 +3,3 @@ layout: home
 ---
 
 <Posts/>
-
-

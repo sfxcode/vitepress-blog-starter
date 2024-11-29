@@ -1,7 +1,7 @@
 import type { Ref } from 'vue'
-import { computed, ref } from 'vue'
-import { useData, useRoute } from 'vitepress'
 import type { Post } from './posts.data'
+import { useData, useRoute } from 'vitepress'
+import { computed, ref } from 'vue'
 import { data } from './posts.data'
 
 export default () => {

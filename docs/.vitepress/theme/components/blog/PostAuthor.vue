@@ -1,8 +1,8 @@
 <script setup lang="ts">
-import { useData } from 'vitepress'
 import type { Author } from '../../composables/authors.data'
+import { useData } from 'vitepress'
 
-const props = defineProps<{
+defineProps<{
   author: Author
 }>()
 

@@ -1,11 +1,11 @@
 <script setup lang="ts">
 import { useData } from 'vitepress'
-import usePosts from '../../composables/usePosts'
 import useAuthors from '../../composables/useAuthors'
+import usePosts from '../../composables/usePosts'
 
 const { site } = useData()
 
-const { currentPost: post, path, prevPost, nextPost } = usePosts()
+const { currentPost: post, prevPost, nextPost } = usePosts()
 const { findByName } = useAuthors()
 const author = findByName(post.value.author)
 </script>

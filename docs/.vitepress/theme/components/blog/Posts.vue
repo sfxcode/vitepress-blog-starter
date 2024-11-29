@@ -18,10 +18,9 @@ const { theme } = useData()
       </p>
     </div>
     <div class="p-2 grid gap-6 lg:grid-cols-2">
-      <div v-for="post of posts">
+      <div v-for="post of posts" :key="post">
         <Post :post="post" />
       </div>
     </div>
   </div>
 </template>
-

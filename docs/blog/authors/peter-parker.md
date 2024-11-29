@@ -5,8 +5,6 @@ avatar: https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/thomas-lea
 
 <AuthorDetail>
 
-
-
 ## Cruore nato deorum olivi et unus actum
 
 Habere aconita moderamen lecto, per domusque tonitrus noxae, in vagantem
