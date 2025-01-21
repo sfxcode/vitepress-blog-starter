@@ -1,7 +1,7 @@
 {
   "name": "@sfxcode/vitepress-blog-starter",
   "type": "module",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "packageManager": "pnpm@9.15.3+sha512.1f79bc245a66eb0b07c5d4d83131240774642caaa86ef7d0434ab47c0d16f66b04e21e0c086eb61e62c77efc4d7f7ec071afad3796af64892fae66509173893a",
   "description": "Vitepress Starter, UnoCSS, Anu, Blog",
   "author": "Tom Lamers",
@@ -21,7 +21,6 @@
     "lint:fix": "eslint --fix .",
     "release": "npm run lint && npm run build && changelogen --patch --release  && git push --follow-tags"
   },
-
   "devDependencies": {
     "@antfu/eslint-config": "^3.15.0",
     "@anu-vue/preset-theme-default": "^0.15.2",
