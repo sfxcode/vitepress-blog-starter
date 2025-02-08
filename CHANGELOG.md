@@ -1,3 +1,9 @@
+## [v1.0.3] - 2025-02-08
+### :wrench: Chores
+- [`625331f`](https://github.com/sfxcode/vitepress-blog-starter/commit/625331f5d930c35a3c4192ef8bd5ed6f43904c01) - **Dependencies**: New VitePress Version 1.6.3 *(commit by [@sfxcode](https://github.com/sfxcode))*
+- [`0f1f201`](https://github.com/sfxcode/vitepress-blog-starter/commit/0f1f2014a4a367cb3eeb3670cccc09b0244a4a7a) - **release**: v1.0.3 *(commit by [@sfxcode](https://github.com/sfxcode))*
+
+
 ## v1.0.3
 
 [compare changes](https://github.com/sfxcode/vitepress-blog-starter/compare/v1.0.2...v1.0.3)
@@ -242,3 +248,4 @@
 [v0.9.2]: https://github.com/sfxcode/vitepress-blog-starter/compare/v0.9.1...v0.9.2
 [v0.10.0]: https://github.com/sfxcode/vitepress-blog-starter/compare/v0.9.2...v0.10.0
 [v1.0.2]: https://github.com/sfxcode/vitepress-blog-starter/compare/v1.0.1...v1.0.2
+[v1.0.3]: https://github.com/sfxcode/vitepress-blog-starter/compare/v1.0.2...v1.0.3
