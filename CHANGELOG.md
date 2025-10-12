@@ -1,3 +1,15 @@
+## v1.0.4
+
+[compare changes](https://github.com/sfxcode/vitepress-blog-starter/compare/v1.0.3...v1.0.4)
+
+### 🏡 Chore
+
+- **Dependencies:** Update package manager and devDependencies to latest versions ([c2482e8](https://github.com/sfxcode/vitepress-blog-starter/commit/c2482e8))
+
+### ❤️ Contributors
+
+- Sfxcode ([@sfxcode](https://github.com/sfxcode))
+
 ## v1.0.3
 
 [compare changes](https://github.com/sfxcode/vitepress-blog-starter/compare/v1.0.2...v1.0.3)
