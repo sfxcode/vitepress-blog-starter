@@ -21,6 +21,9 @@
     "lint:fix": "eslint --fix .",
     "release": "npm run lint && npm run build && changelogen --patch --release  && git push --follow-tags"
   },
+  "dependencies": {
+    "oxc-minify": "^0.149.0"
+  },
   "devDependencies": {
     "@antfu/eslint-config": "^9.5.1",
     "@anu-vue/preset-theme-default": "^0.15.2",
@@ -48,8 +51,5 @@
     "overrides": {
       "vite": "npm:rolldown-vite@latest"
     }
-  },
-  "dependencies": {
-    "oxc-minify": "^0.149.0"
   }
 }
