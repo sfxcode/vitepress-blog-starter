@@ -1,3 +1,20 @@
+## v1.0.5
+
+[compare changes](https://github.com/sfxcode/vitepress-blog-starter/compare/v1.0.4...v1.0.5)
+
+### 📖 Documentation
+
+- Update CHANGELOG.md for v1.0.3 [skip ci] ([f3485b6](https://github.com/sfxcode/vitepress-blog-starter/commit/f3485b6))
+
+### 🏡 Chore
+
+- Update uno.config.ts to use presetWind4 and adjust config file path in config.mts; update devDependencies in package.json ([c66f54e](https://github.com/sfxcode/vitepress-blog-starter/commit/c66f54e))
+- Add oxc-minify dependency to package.json ([cfbcf13](https://github.com/sfxcode/vitepress-blog-starter/commit/cfbcf13))
+
+### ❤️ Contributors
+
+- Sfxcode ([@sfxcode](https://github.com/sfxcode))
+
 ## [v1.0.3] - 2025-02-08
 ### :wrench: Chores
 - [`625331f`](https://github.com/sfxcode/vitepress-blog-starter/commit/625331f5d930c35a3c4192ef8bd5ed6f43904c01) - **Dependencies**: New VitePress Version 1.6.3 *(commit by [@sfxcode](https://github.com/sfxcode))*
