@@ -1,3 +1,4 @@
+import { fileURLToPath } from 'node:url'
 import Unocss from 'unocss/vite'
 import { defineConfig } from 'vitepress'
 import { version } from '../../package.json'
@@ -40,7 +41,7 @@ export default defineConfig({
   vite: {
     plugins: [
       Unocss({
-        configFile: '../../unocss.config.ts',
+        configFile: fileURLToPath(new URL('../uno.config.ts', import.meta.url)),
       }),
     ],
   },

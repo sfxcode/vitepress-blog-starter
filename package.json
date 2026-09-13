@@ -22,26 +22,34 @@
     "release": "npm run lint && npm run build && changelogen --patch --release  && git push --follow-tags"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^5.4.1",
+    "@antfu/eslint-config": "^9.5.1",
     "@anu-vue/preset-theme-default": "^0.15.2",
-    "@iconify-json/bx": "^1.2.2",
-    "@iconify-json/fluent-emoji": "^1.2.6",
+    "@iconify-json/bx": "^1.2.3",
+    "@iconify-json/fluent-emoji": "^1.2.7",
     "@iconify-json/heroicons-outline": "^1.2.1",
-    "@iconify-json/logos": "^1.2.9",
-    "@types/node": "^24.7.2",
-    "@unocss/preset-icons": "66.5.3",
-    "@unocss/preset-uno": "66.5.3",
-    "@vueuse/core": "^13.9.0",
+    "@iconify-json/logos": "^1.2.14",
+    "@types/node": "^26.5.1",
+    "@unocss/preset-icons": "66.10.2",
+    "@unocss/preset-uno": "66.10.2",
+    "@vueuse/core": "^14.4.0",
     "anu-vue": "^0.15.2",
     "changelogen": "^0.6.2",
-    "date-fns": "^4.1.0",
-    "eslint": "^9.37.0",
-    "fs-extra": "^11.3.2",
+    "date-fns": "^4.4.0",
+    "eslint": "^10.10.0",
+    "fs-extra": "^11.4.0",
     "gray-matter": "^4.0.3",
-    "markdown-it": "^14.1.0",
-    "typescript": "^5.9.3",
-    "unocss": "66.5.3",
-    "vitepress": "^1.6.4",
-    "vue": "^3.5.22"
+    "markdown-it": "^15.0.2",
+    "typescript": "^6.0.3",
+    "unocss": "66.10.2",
+    "vitepress": "2.0.0-alpha.16",
+    "vue": "^3.5.42"
+  },
+  "pnpm": {
+    "overrides": {
+      "vite": "npm:rolldown-vite@latest"
+    }
+  },
+  "dependencies": {
+    "oxc-minify": "^0.149.0"
   }
 }
